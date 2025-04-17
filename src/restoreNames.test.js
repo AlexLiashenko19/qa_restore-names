@@ -14,7 +14,7 @@ describe('restoreNames', () => {
 
     restoreNames(users);
 
-    expect(users[0]).toBe('Jack');
+    expect(users[0].firstName).toBe('Jack');
   });
 
   it('should restore missing firstName from multiple users', () => {
@@ -32,7 +32,7 @@ describe('restoreNames', () => {
 
     restoreNames(users);
 
-    expect(users[0]).toBe('Jack');
-    expect(users[1]).toBe('Mike');
+    expect(users[0].firstName).toBe('Jack');
+    expect(users[1].firstName).toBe('Mike');
   });
 });
